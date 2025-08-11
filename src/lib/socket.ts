@@ -1,8 +1,5 @@
-// src/lib/socket.ts
-import { io } from "socket.io-client"
+import { io } from "socket.io-client";
 
-const URL = "http://localhost:3000" // change this to VPS/production later
-
-export const socket = io(URL, {
-  autoConnect: false, // connect manually when needed
-})
+export const socket = io(import.meta.env.VITE_SOCKET_URL as string, {
+  transports: ["websocket"],
+});

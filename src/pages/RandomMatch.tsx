@@ -1,14 +1,14 @@
 // src/pages/RandomMatch.tsx
 import { useState } from "react"
-import { Button } from "@/components/ui/button"
-import { Skeleton } from "@/components/ui/skeleton"
+import { Button } from "../components/ui/button"
+import { Skeleton } from "../components/ui/skeleton"
 import {
   Dialog,
   DialogContent,
   DialogHeader,
   DialogTitle,
   DialogFooter,
-} from "@/components/ui/dialog"
+} from "../components/ui/dialog"
 import { useNavigate } from "react-router-dom"
 import { motion, AnimatePresence } from "framer-motion"
 
